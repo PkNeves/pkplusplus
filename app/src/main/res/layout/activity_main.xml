@@ -6,13 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/v1"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="66dp"
+        android:text="Valor 1:"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <TextView
+        android:id="@+id/v2"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Valor 2:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed1" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+    <Button
+        android:id="@+id/bplus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
+        android:text="+"
+        android:onClick="operacao"
+        android:tag="somar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed2" />
+
+    <Button
+        android:id="@+id/bminus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="68dp"
+        android:text="-"
+        android:onClick="operacao"
+        android:tag="subtrair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed2" />
+
+    <Button
+        android:id="@+id/bmult"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="72dp"
+        android:text="*"
+        android:onClick="operacao"
+        android:tag="multiplicar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed2" />
+
+    <Button
+        android:id="@+id/bdiv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="72dp"
+        android:text="/"
+        android:onClick="operacao"
+        android:tag="dividir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed2" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="76dp"
+        android:text="O Resultado é:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
