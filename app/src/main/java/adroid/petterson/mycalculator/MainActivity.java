@@ -33,19 +33,19 @@ public class MainActivity extends AppCompatActivity {
 
         if(tag.equals("somar")) {
             double op = d1 + d2;
-            String str = str_result + String.valueOf(op);
+            String str = str_result + String.format("%.2f", op);
             result.setText(str);
         } else if (tag.equals("subtrair")) {
             double op = d1 - d2;
-            String str = str_result + String.valueOf(op);
+            String str = str_result + String.format("%.2f", op);
             result.setText(str);
         } else if (tag.equals("multiplicar")) {
             double op = d1 * d2;
-            String str = str_result + String.valueOf(op);
+            String str = str_result + String.format("%.2f", op);
             result.setText(str);
         } else if (tag.equals("dividir")) {
             double op = d1 / d2;
-            String str = str_result + String.valueOf(op);
+            String str = str_result + String.format("%.2f", op);
             result.setText(str);
         }
 
