@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SimpleCalc extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

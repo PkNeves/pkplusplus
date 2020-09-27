@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SimpleCalc">
 
 
     <TextView
         android:id="@+id/v1"
-        android:layout_width="48dp"
-        android:layout_height="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:layout_marginTop="66dp"
         android:text="Valor 1:"
@@ -19,8 +19,8 @@
 
     <EditText
         android:id="@+id/ed1"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:layout_marginTop="11dp"
         android:ems="10"
@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/v2"
-        android:layout_width="48dp"
-        android:layout_height="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:layout_marginTop="28dp"
         android:text="Valor 2:"
@@ -40,8 +40,8 @@
 
     <EditText
         android:id="@+id/ed2"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:layout_marginTop="25dp"
         android:ems="10"
@@ -101,8 +101,8 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="308dp"
         android:text="O Resultado é:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
